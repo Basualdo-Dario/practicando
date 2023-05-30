@@ -1,0 +1,30 @@
+*{
+    margin: 0; 
+}
+h1{
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+} 
+
+.t1{
+    color: blue;
+    background-color: yellow;
+    border: 10px solid blue;
+
+    padding: 10px 20px 20px 5px;
+
+}
+.t2{
+    color: #fff;
+    background-color: black;
+    border: 10px solid  red;
+
+    padding: 10px 20px 20px 5px;
+
+
+}
