@@ -1,5 +1,10 @@
 *{
-    margin: 0; 
+    margin: 0 5%; 
+
+}
+body{
+    
+    background-color: white;
 }
 h1{
     top: auto;
@@ -16,7 +21,9 @@ h1{
     background-color: yellow;
     border: 10px solid blue;
 
+    margin:10px 0px 20px   ;
     padding: 10px 20px 20px 5px;
+
 
 }
 .t2{
@@ -27,4 +34,59 @@ h1{
     padding: 10px 20px 20px 5px;
 
 
+}
+
+header div{
+    margin: 20px 0px;
+    text-align: center;
+}
+div{
+    background-color:white;
+}
+p{
+    color: white;
+    background-color:transparent;
+}
+main p{
+    text-align: center;
+    padding: 20px;
+    color: inherit;
+   
+}
+
+p:hover
+{
+    color: white;
+    background-color: black;
+    
+}
+footer a {
+    display: block;
+    text-align: center;
+    margin: 10% auto;
+    width: 150px
+}
+
+/* cuando no se visito */
+a:link{
+    color: #003049;
+    text-decoration: none;
+}
+
+/* cuando ya se visito */
+a:visited{
+    color: #d62828;
+    text-decoration: underline;
+}
+/* cuando se pasa el raton por encima */
+a:hover
+{   
+    color: #f5f;
+    text-decoration: underline;
+}
+/* cuando se mantiene el click presionado */
+a:active{
+    color:#fcbf49;
+    text-decoration: underline;
+    
 }

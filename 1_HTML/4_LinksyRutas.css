@@ -1,0 +1,46 @@
+
+*{
+    margin: 0px;
+}
+body{
+    background-color: aqua;
+}
+a {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    width: 150px
+}
+
+/* cuando no se visito */
+a:link{
+    color: #003049;
+    text-decoration: none;
+}
+
+/* cuando ya se visito */
+a:visited{
+    color: #d62828;
+    text-decoration: underline;
+}
+/* cuando se pasa el raton por encima */
+a:hover
+{   
+    color: #f5f;
+    text-decoration: underline;
+}
+/* cuando se mantiene el click presionado */
+a:active{
+    color:#fcbf49;
+    text-decoration: underline;
+    
+}
+.epic{
+    
+    
+}
+a img {
+    height: 80px;
+    width: 80px;
+    
+}

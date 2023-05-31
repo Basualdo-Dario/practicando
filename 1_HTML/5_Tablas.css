@@ -1,0 +1,45 @@
+/*para dar estilo a varias etiquetas ala ves se separa con comas */
+
+*{
+    margin: 0;
+}
+table{
+    margin: 3px;
+    width: 98%;
+
+}
+table,th,td,caption{
+    border: 10px black;
+    border-style: double;
+    border-collapse: collapse;
+    text-align: center;
+}
+img{
+    height: 50px;
+    width: 50px;
+}
+a:visited{
+    background-color: green;
+}
+a:hover{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #fe4570;
+
+}
+a:active{
+
+    background-color: blue;
+}
+
+/* pinta los renglones pares*/
+tr:nth-child(even){
+    background-color: white;
+    color: black;
+}
+
+/* pinta los renglones impares*/
+tr:nth-child(odd){
+    background-color: grey;
+}
