@@ -1,37 +1,77 @@
 body{
-background-color: #370617;    
+    margin: 0;
+    background-color: #eee;
 
 }
-
+header{
+    
+    
+}
+div{
+    
+    
+    
+}
 
 ul{
     
-     list-style-type: none;
-    background-color: red;
+    list-style-type: none;  
+    background-color: rgb(0, 255, 255);  
+    overflow: hidden;
+   
+
+    
+
 }
 
 li{
     float: left;
-    margin: 5px 4px;
+ 
 }
 
 a{
     display: block;
+    padding: 0px 20px;
     text-decoration: none;
-    color: white;
-    padding: 10px;
-    border:1px  white;
-    border-style: solid;
-    background-color: #370617;
-    height: 20px;
-    width: 100px;
-}
-a:active{
     color: black;
-   
+    font-size: 25px;
+    font-family: 'Aref Ruqaa Ink', serif;
+    padding: 30px 20px;
+
 }
-a:hover{
-    background-color: #6A040F;
+li a:hover{
+    color: #fff;
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    background-color: rgb(0, 200, 255);
+    
+    
+}
+li a:active{
+
+    color: #000;
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    background-color: rgb(0, 100, 255); 
+
+    /* 
+    color: red;
+    font-family: 'Creepster';
+    font-size: 30px;
+    background-color: black;
+    border-radius: 50px;
+     */
 }
 
-/* C38 T7 */
+img{
+    display: block;
+    background-color: #eee;
+    border: 1px solid black;
+    border-radius: 50px;
+    height: 80px;
+    width: 80px;
+    margin: 10px 0px 0px 0px;
+    
+}

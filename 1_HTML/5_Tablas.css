@@ -43,3 +43,35 @@ tr:nth-child(even){
 tr:nth-child(odd){
     background-color: grey;
 }
+
+
+
+
+
+.listan{
+    list-style: none;
+    counter-reset: contador;
+
+}
+.listan li{
+    
+    counter-increment: contador;
+
+}
+
+/* 
+    se puede agregar un texto antes de que se muestra en la lista*/
+
+.listan ::before{
+    content: '[' counter(contador) ']  ';
+    /* counter es un contador y sele pone el nombre de la variable que queramos */
+
+}
+
+/* 
+    se puede agregar un texto despues de que se muestra en la lista*/
+
+.listan ::after{
+    content: '[' counter(contador) ']';
+
+}
