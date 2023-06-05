@@ -1,0 +1,31 @@
+html{
+    height: 100%;
+}
+body{
+margin: 0;
+padding: 0;
+color: white;
+background: linear-gradient(#4CC9F0,#4895EF,#4361EE,#3F37C9,#3A0CA3);
+}
+/* background: linear-gradient(#4CC9F0,#4895EF,#4361EE,#3F37C9,#3A0CA3);
+    se hace un degradado de arriba hacia abajo
+ */
+.contenedor{
+    margin: 50px auto;
+    width: 400px;
+    padding: 30px;
+    background: rgba(0, 0, 0, .3);
+    border-radius: 10px;
+}
+.contenedor h2{
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 30px;
+    text-align: center;
+}
+#forma{
+
+}
+.elementos{
+
+}
