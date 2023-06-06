@@ -1,21 +1,30 @@
+
 html{
     height: 100%;
+    
 }
 body{
 margin: 0;
 padding: 0;
 color: white;
 background: linear-gradient(#4CC9F0,#4895EF,#4361EE,#3F37C9,#3A0CA3);
+
 }
 /* background: linear-gradient(#4CC9F0,#4895EF,#4361EE,#3F37C9,#3A0CA3);
     se hace un degradado de arriba hacia abajo
  */
+
 .contenedor{
-    margin: 50px auto;
+    margin: 180px auto;
     width: 400px;
     padding: 30px;
-    background: rgba(0, 0, 0, .3);
-    border-radius: 10px;
+    border-top: 1px solid #3F37C9;
+    border-right: 1px solid #3F37C9;
+    border-bottom: 2px solid #3F37C9;
+    border-left: 1px solid #3F37C9 ;
+    border-radius: 30px;
+    background: linear-gradient(#4CC9F0,#4895EF,#4361EE,#3F37C9);
+    box-shadow: inset 0px 0px 10px 5px #3A0CA3,0px 0px 20px 10px #000; 
 }
 .contenedor h2{
     margin: 0 0 30px;
@@ -23,9 +32,41 @@ background: linear-gradient(#4CC9F0,#4895EF,#4361EE,#3F37C9,#3A0CA3);
     font-size: 30px;
     text-align: center;
 }
-#forma{
 
+.contenedor .elemento input {
+    width: 100%;
+    padding: 10px 0px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 30px;
 }
-.elementos{
+.contenedor .elemento .botom{
 
+    border-top: 1px solid #3F37C9;
+    border-right: 1px solid #3F37C9;
+    border-bottom: 2px solid #3F37C9;
+    border-left: 1px solid #3F37C9 ;
+    border-radius: 10px;
+    background: linear-gradient(#4CC9F0,#4895EF,#4361EE,#3F37C9);
+    /* le 2 pixeles de espacio alas letras */
+    letter-spacing: 2px;
+    font-size: 16px;
+    /* hace que el mouse se convierta en una manito */
+    cursor: pointer;
+
+} 
+
+.contenedor .elemento .botom:hover{
+    border-color: #fff;
+}
+.contenedor .elemento .botom:active{
+    
+    border-color: #3A0CA3;
+    box-shadow:inset 0px 0px 10px 3px #3A0CA3;
+    
+}
+#forma{
+    
 }
