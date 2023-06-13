@@ -1,0 +1,33 @@
+*{margin: 0;padding: 0;}
+body{
+    background-color: rgb(241, 194, 106);
+ 
+}
+header {
+    
+    background-color: rgba(245, 245, 220,.5);
+    overflow: hidden;
+    box-shadow:inset  40px 40px 30px red,inset  -40px -40px 30px orange; 
+}
+h1{
+    padding: 30px;
+
+
+    color:  #ef6496;
+    background-color: rgba(245, 245, 220,.5);
+    text-align: center; 
+
+    /* Sepuede converitr el texto en 
+    mayusculas:uppercase
+    minusculas:lowercase
+    etc. */
+    text-transform: uppercase;
+
+    text-shadow: 1px 1px 0px black,3px 1px 0px white ,-10px -10px 20px red,10px 10px 20px orange; 
+
+}
+p{
+
+}
+
+/* C95 T16 */

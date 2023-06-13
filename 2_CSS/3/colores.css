@@ -1,0 +1,37 @@
+*{margin: 0;padding: 0;}
+header{
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0px;
+}
+header h1{
+    color: coral ;
+}
+main{
+    margin-left: 10px;
+}
+.color{
+    float: left;
+    width: 20%;
+    height: 100px;
+    margin: 15px 0px ;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    
+}
+.color p{
+    padding: 30px 0px 0px;
+    font-size: 20px;
+}
+.chtml{background-color: crimson;}
+.chtml2{background-color: deeppink;}
+
+.crgb{background-color: rgb(153, 11, 153);}
+.crgba{background-color: rgba(153, 11, 153, 0.61);}
+
+.ch{background-color: #00bfff;}
+.cht{background-color: #00bfff6b;}
+
+.chsl{background-color: hsl(39, 100%, 50%);}
+.chslt{background-color: hsla(39, 100%, 50%, 0.493);}

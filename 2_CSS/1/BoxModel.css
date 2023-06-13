@@ -22,11 +22,13 @@ main div{
     margin: 20px auto 20px auto;
     /* el elemento outline se encuentra entre el margen y el borde:
     se maneja igual que el borde */
-    outline: 10px solid rgba(255, 0, 0, 0.750);
+    outline: 10px solid rgba(255, 100, 100, 0.750);
 
     /* esta propiedad separa el otline del borde y solo se puede poner un valor para los 4 lados */
     outline-offset: 10px;
     box-shadow: 0px 0px 40px 20px rgba(255, 0, 0, 0.550);
+
+    /*box-sizing: border-box  _hace que el tamaño(width) que especifiquemos se respete sin importar si agregamos padding */
+    box-sizing: border-box ;
 }
 
-/* C82 T13 */

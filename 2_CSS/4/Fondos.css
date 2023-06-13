@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+   background-color: dodgerblue;
+   color: cornsilk;
+
+   /*para poner una imagen de fondo  */
+   background-image: url("/2_CSS/4/fondo.png");
+
+   /* para controlar el comportamiento de la imagen de fondo sepone (background-repeat:;)   */
+   background-repeat: no-repeat;
+
+   /* si la imagen se ve pequeña con ( background-position: left; ) la podemos posicionar    */
+
+   /* background-attachment: scroll; hace que la imagen baje con el contenido */
+    /* background-attachment: fixed; hace que la  imagen no baje con el contenido si que se queda quieta */
+   
+   background-attachment: fixed;
+}
+header h1{
+        text-align: center;
+        background-color: dodgerblue;
+        width: 300px;
+        margin: 0px auto;
+}

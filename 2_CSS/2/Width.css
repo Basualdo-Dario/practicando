@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+h1{
+    color: coral;
+    text-align: center;
+    font-size: 60px;
+
+}
+
+div{
+
+    /*  max-width: 600px; si la pantalla lo permite el ancho maximo va hacer de 600 sino este se va a ir achicando y adaptando */
+    max-width: 600px;
+    min-width: 300px;
+    
+}
+
+.box1{ 
+    margin: 30px;
+    font-size: 30px;
+    padding: 10px;
+    border: 1px solid lightblue;
+    background-color: lightcyan;
+    width: inherit;
+    box-sizing: border-box;
+
+}
+
+.box2{ 
+    margin: 20px;
+    font-size: 30px;
+    padding: 10px;
+    border: 1px solid lightblue;
+    background-color: lightcyan;
+    width: inherit;
+    box-sizing: border-box;
+}
