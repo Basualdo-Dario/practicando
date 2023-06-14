@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Creepster&family=Indie+Flower&family=Sofia&display=swap');
+*{margin: 0;padding: 0;}
+
+body{color: white;}
+
+header{margin: 10px 0px 30px 0px;}
+
+.titulo{
+    text-align: center;
+    color: blue;
+    text-shadow: 0px 0px 1px white,-1px 2px  3px red, 2px 2px  3px black;
+    padding: 10px 0px;
+    font-size: 40px;
+    font-family: 'Sofia', cursive;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+  
+}
+
+main{margin-left: 10px; }
+
+.caja{
+    float: left;
+    width: 40%;
+    border: 1px solid ;
+    text-align: center;
+    padding: 40px  5px 40px 5px;
+    margin: 10px;
+    border-radius: 10px;
+    
+
+}
+.morado{background-color: blueviolet;}
+
+.turquesa{background-color: aqua;}
+
+.rosa{background-color: rgb(253, 152, 208);}
+
+.naranja{background-color: orange;}
+
+/* ---------------------------------------------------------------- */
+.roman{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-variant: small-caps;}
+    
+.georigia{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;}
+        
+.arial{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+}
+        
+.verdana{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.courier{font-family: 'Courier New', Courier, monospace;}
+
+.lucida{font-family: 'Lucida Handwriting', cursive;}
+
