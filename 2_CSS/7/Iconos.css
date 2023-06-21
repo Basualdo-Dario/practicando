@@ -1,0 +1,37 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    background-color: #fafafa;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(87, 36, 36);
+    margin-bottom: 30px;
+
+}
+div{ padding: 10px; margin: 10px;}
+p{
+    font-size: 20px;
+    text-align: start;
+}
+.tamañoicono{
+
+    font-size: 60px;
+    vertical-align: middle;
+}
+.bi-alarm{
+    color: rgb(7, 184, 184);
+}
+.bi-amd{
+    color: red;
+    background-color: #000;
+}
+
+
+p .tamañoiconog{
+    font-size: 60px;
+    vertical-align: middle;
+    color:rgb(117, 6, 6);
+}

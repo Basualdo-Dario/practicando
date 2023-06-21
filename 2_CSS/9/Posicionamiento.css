@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+}
+
+/* Posicionamiento */
+.div1{
+    max-width: 50%;
+    border: 1px solid brown;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.pstatic{
+    /* posicionamiento por defecto,el top,right,left,bottom no funcionan */
+    position: static;
+}
+.prelative{
+    /* si funcionan el top,right,left,bottom */
+    position: relative;
+    top: 30px;
+    left: 50px;
+
+}
+.pfixed{
+     /*
+      si funcionan el top,right,left,bottom  
+      se mide con respecto al (viewport = pantalla(html-body))
+      se queda fijo en el lugar que establesimos y se mueve con la pantalla
+
+     */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    border: 1px solid brown;
+    background-color: rgba(0, 0, 255, 0.863);
+    padding: 4px;
+}
+/* C115 T20 */

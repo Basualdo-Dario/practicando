@@ -1,0 +1,31 @@
+body{
+
+    color: rgb(141, 21, 21);
+}
+h1, div ,p{
+    border: 2px solid lightcoral;
+    text-align: center;
+    padding: 10px;
+    display: block;
+}
+
+span,a{
+    border: 2px solid lightcoral;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* con Display none los elementos no se ven ,y no seles reserva el espacio,pero si se cargan */
+.ocultar1{
+    display: none;
+}
+/*hidden = ocultar 
+con visibility:hidden  los elementos no se ven,pero si seles reserva el espacio*/
+.ocultar2{
+    visibility: hidden;
+}
