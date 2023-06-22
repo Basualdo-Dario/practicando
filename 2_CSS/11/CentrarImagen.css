@@ -1,0 +1,28 @@
+*{margin: 0;padding: 0;}
+h1{
+    color: crimson;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;    
+}
+
+.contenedor{
+    position: relative;
+    border: 3px dashed greenyellow;
+    width: 30%;
+    margin: auto;
+    
+}
+.imagen{
+    width: 100%;
+    opacity: .3;
+}
+.centro{    
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* C121 T20 */
