@@ -1,0 +1,54 @@
+
+/* display:inline
+    Nose puede utilazar el padding,marging,en su top,y en su bootom  y tampoco el top y el bootom
+    
+    display:inline-block
+    se puede utilazar el padding,marging,en su top,y en su bootom  y tambien el top y el bootom*/
+
+*{margin: 0;padding: 0;}
+.titulo{
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 40px;
+    padding: 10px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.menu{
+    text-align: center;
+}
+.menu a{
+    padding: 10px;
+    border-radius: 10px;
+    background-color:crimson;
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px;
+    text-decoration: none;
+
+}
+.contenido{
+    width: 75%;
+    margin: 30px auto;
+    border: 2px dashed aquamarine;
+    
+}
+.texto-medio{
+    display: inline-block;
+    padding-bottom: 50px;
+    border: 1px solid aqua;
+    background-color: aquamarine;
+}
+.color{
+    background-color: white;
+    border-radius: 100%;
+    color:green;
+    box-shadow:inset 0px 0px 5px crimson,0px 0px 10px white;
+    text-shadow: 1px 1px 1px black;
+}
+a:hover{
+    box-shadow: inset  0px 0px 30px red;
+    text-decoration: underline;
+}
+/* C126 T21 */
