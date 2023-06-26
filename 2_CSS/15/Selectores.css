@@ -1,0 +1,68 @@
+*{margin: 0;padding: 0;}
+h1{
+    text-align: center;
+    color: crimson;
+    padding: 15px;
+    margin-bottom: 10%;
+}
+
+h3{background-color: rgba(100, 100, 100, 0.1);}
+
+.contenedor{
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid #a8dadc;
+    padding: 15px;
+    color: #457b9d;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.2);
+    position: relative;
+}
+
+/* heredan todos los parrafos de forma desendiente */
+.contenedor.descendiente p{
+    color: rgb(100, 0, 0);
+    background-color:rgba(250, 0, 0, 0.3);
+}
+
+
+/* heredan solo los hijos */
+.contenedor.hijo > p{
+    color: rgb(0, 0, 100);
+    background-color:rgba(0, 0, 250, 0.3);
+}
+
+
+/* heredan solo los hijos */
+.contenedor.hijo > p{
+    color: rgb(0, 0, 100);
+    background-color:rgba(0, 0, 250, 0.3);
+}
+
+
+/*solo hereda el contenido los elementos estan abajo de este contenedor pero solo un elemento   */
+/* adyacente" se refiere a un elemento que sigue inmediatamente a otro */
+.contenedor.adyacente + p{
+    color: black;
+    background-color: rgba(0, 0, 255, 0.3);
+    border: 3px solid lightblue;
+    margin: 10px auto;
+    padding: 15px;
+    text-align: center;
+    width: 80%;
+}
+
+
+
+/* heredan todos los elementos que estan abajo de este contenedor */
+
+.contenedor.hermano ~ p{
+    color: green;
+    background-color: rgba(0, 255, 0, 0.3);
+    border: 3px solid lightblue;
+    margin: 10px auto;
+    padding: 15px;
+    text-align: center;
+    width: 80%;
+}

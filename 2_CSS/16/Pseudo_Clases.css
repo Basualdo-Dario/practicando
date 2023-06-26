@@ -1,0 +1,56 @@
+*{margin: 0;padding: 0;}
+h1{
+    color: crimson;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+}
+
+/*############################# Clases #################################################*/
+.contenedor{
+    width: 50%;
+    height: 20%;
+    border: 3px solid aqua;
+    margin:30px auto;
+    padding: 15px 5px ;
+    color: rgb(90, 90, 90);
+    background-color: rgba(127, 255, 212, 0.3);
+    text-align: center;
+
+}
+
+.contenedor:hover{
+    background-color: #457b9d;
+    color: #f1faee; 
+}
+.contenedor.oculto p{
+    display: none;
+}
+.contenedor.oculto:hover p{
+    display: block;
+    padding: 20px;
+    color: #023e8a;
+    background-color: #a8dadc;
+}
+
+.contenedor.primero p:first-child{
+
+    font-variant: small-caps;
+}
+
+.contenedor.primero .p1{
+    display: none;
+}
+.contenedor.primero:hover .p1{
+    display: block;
+    padding: 20px;
+    color: #023e8a;
+    background-color: #a8dadc;
+}
+
+/* <!--############################# Elementos #################################################*/
+
+.contenedor_elemento p::selection{
+
+}
+/* C130 T21 */
