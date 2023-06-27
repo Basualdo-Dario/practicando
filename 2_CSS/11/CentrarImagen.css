@@ -25,3 +25,9 @@ h1{
     font-size: 25px;
 }
 
+.contenedor:hover .imagen{
+    opacity: 1;
+}
+.contenedor:hover .centro{
+    display: none;
+}

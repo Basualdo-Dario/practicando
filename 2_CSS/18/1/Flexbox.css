@@ -1,0 +1,52 @@
+*{margin: 0;padding: 0;}
+.titulo{
+    text-align: center;
+    color: crimson;
+    text-shadow: 2px 2px 3px grey;
+    margin-bottom: 30px;
+}
+.contenedor{
+    display: flex;
+    background-color: rgba(255, 235, 205, 0.473);
+    border: 1px solid black;
+    margin: 10px 0px;
+  
+   
+}
+.contenedor > p{
+    padding: 10px;
+    background-color: aquamarine;
+    margin: 20px;
+    border: 1px solid black;
+    text-shadow: 1px 1px 1px white;
+    
+}
+
+.e0{/* valor pordefecto */ 
+    flex-direction: row;
+    /*valor por defecto */
+    flex-wrap: nowrap;
+    }
+
+.e1{
+    flex-direction: row-reverse;
+    /* wrap = envolver,osea que se pasa a columna para poder ver todo */
+    flex-wrap: wrap;
+    }
+
+.e2{/* en ves de poner 
+            flex-direction: column;
+            flex-wrap: wrap;
+        se puede poner este valor por que es lo mismo
+            flex-flow: column wrap;
+     */ 
+    flex-flow: column wrap;
+    
+    }
+
+.e3{ /* se muestra en columna pero alreves , el ultmo valor va primero y ante ultimo va segundo,etc.*/
+    flex-direction:column-reverse;
+    flex-wrap: wrap-reverse;
+    }
+
+

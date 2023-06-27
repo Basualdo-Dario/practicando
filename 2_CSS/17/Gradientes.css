@@ -1,0 +1,74 @@
+*{margin: 0;padding: 0;}
+html{
+    height: auto;
+    min-height: 100%;
+}
+body{
+    
+    
+    /*       degradel de arriba hacia abajo (por defecto) 
+    background:linear-gradient(#000,#00f ,#000);
+    
+    degradel de izquierda hacia la derecha 
+    background:linear-gradient(to right,#555,#00f ,#000);
+    
+    degradel de derecha hacia la izquierda  
+    background:linear-gradient(to left,#555,#00f ,#000);
+    
+    degradel de abajo  hacia arriba
+    background:linear-gradient(to top,#000,#00f ,#fff);
+    
+    degradel de arriba hacia abajo 
+    background:linear-gradient(to bottom,#000,#00f ,#fff);
+    */
+    /* hacia abajo y hacia la derecha */
+    background:linear-gradient(to bottom right,#000,#00f ,#000);
+    
+    /* se marca el angulo que deseamos trabajar y es de 0 a 360 grados*/
+    background:linear-gradient(40deg,#555,#00f ,#000);
+    
+    /* se crea un degradel en circulo , el primer color es el centro y de ahi hacia afuera */
+    background: radial-gradient(circle,rgb(0, 0, 255),rgb(0, 247, 255));
+    
+}
+.titulo{
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+    margin: 30px auto 60px;
+    color: white;
+    text-shadow: 1px 1px 1px gray;
+}
+.contenedor{
+    width: 30%;
+    height: 20%;
+    position: relative;
+    margin: 20px auto;
+    border: 3px solid white;
+    background:radial-gradient(#fff ,#00f);
+    opacity: 0.4;
+   
+  
+}
+.texto{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    top: 10%;
+    
+
+}
+.imagen{
+    position: relative;
+    width: 80%;
+    padding: 10px;
+    display: block;
+    margin: 60px auto 20px;
+  
+}
+.contenedor:hover{
+    opacity: 1;
+    box-shadow: 0px 0px 10px white;
+}
