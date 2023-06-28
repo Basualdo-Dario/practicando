@@ -10,6 +10,7 @@
     background-color: rgba(255, 235, 205, 0.473);
     border: 1px solid black;
     margin: 10px 0px;
+ 
   
    
 }
@@ -22,16 +23,43 @@
     
 }
 
-.e0{/* valor pordefecto */ 
+.e0{
     flex-direction: row;
-    /*valor por defecto */
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+
+    /*Es el valor por default y lo carga ala izquierda o al inicio  */
+    justify-content: flex-start;
     }
-/* 
-.e1{}
 
-.e2{}
 
-.e3{}
- */
 
+
+
+.e1{ 
+    flex-flow:row wrap ;
+    /* pone el contenido al centro */
+    justify-content: center;
+}
+
+.e2{   
+     flex-flow:row wrap ;
+    /* pone el contenido al final */
+    justify-content: flex-end;
+}
+
+.e3{
+    flex-flow:row wrap ;
+    /* pone el contenido a cada extremo*/
+    justify-content: space-between;
+}
+.e4{   
+    flex-flow:row wrap ;
+   /* pone un espacio al derecho y al izquierdo space-around = espacion-alrededor*/
+   justify-content: space-around;
+}
+
+.e5{
+   flex-flow:row wrap ;
+   /* crea un espacio igual entre los elementos*/
+   justify-content: space-evenly;
+}

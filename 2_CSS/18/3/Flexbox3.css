@@ -1,0 +1,86 @@
+*{margin: 0;padding: 0;}
+.titulo{
+    text-align: center;
+    color: crimson;
+    text-shadow: 2px 2px 3px grey;
+    margin-bottom: 30px;
+}
+.contenedor{
+    display: flex;
+    background-color: rgba(255, 235, 205, 0.473);
+    border: 1px solid black;
+    margin: 10px 0px;
+    height: 200px;
+  
+   
+}
+.contenedor > p{
+    padding: 10px;
+    background-color: aquamarine;
+    margin: 20px;
+    border: 1px solid black;
+    text-shadow: 1px 1px 1px white;
+    
+}
+
+.e0{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    /* se alinean los items en el eje horizontal */
+    /* en este caso en el top o el inicio */
+    align-items: flex-start;
+
+    }
+.e1{ 
+    flex-flow:row wrap ;
+    justify-content: center;
+    /*se alinenan los items en el centro */
+    align-items: center;
+
+}
+
+.e2{   
+     flex-flow:row wrap ;
+    justify-content: flex-end;
+    /*se alinean los items en el bottom o final*/
+    align-items: flex-end;
+
+}
+
+
+.e3{
+    flex-flow:row wrap ;
+    justify-content: space-between;
+
+    /* este es el valor por default y significa estirar */
+    align-items: stretch;
+}
+.a1{height: 30px; font-size: small;}
+.a2{height: 50px; font-size: medium;}
+.a3{height: 70px; font-size: xx-large;}
+
+
+
+.e4{   
+    flex-flow:row wrap ;
+   justify-content: space-evenly;
+
+   /* el baseline es una linea imaginaria que se crea y con forme a eso los items crecen  */
+   align-items: baseline;
+}
+
+
+.e5{
+   flex-flow:row wrap ;
+   justify-content: space-evenly; 
+
+   /* Se alinea el contenido en el eje vertical */
+  /*  align-content: flex-start;
+
+   align-content: flex-end;
+   align-content: space-between;
+   align-content: space-around; */
+   align-content: center;
+}

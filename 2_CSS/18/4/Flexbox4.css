@@ -1,0 +1,57 @@
+*{margin: 0;padding: 0;}
+.titulo{
+    text-align: center;
+    color: crimson;
+    text-shadow: 2px 2px 3px grey;
+    margin-bottom: 30px;
+}
+.contenedor{
+    display: flex;
+    background-color: rgba(255, 235, 205, 0.473);
+    border: 1px solid black;
+    margin: 10px 0px;
+    height: 200px;
+  
+   
+}
+.contenedor > p{
+    padding: 10px;
+    background-color: aquamarine;
+    margin: 20px;
+    border: 1px solid black;
+    text-shadow: 1px 1px 1px white;
+    
+}
+
+.e0{
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items:center ;
+    align-content: center;
+ 
+
+    }
+.a1{
+    /* order : es una propiedad que se puede establecer el orden de los conntenedores */
+    order: 3;
+
+    /* es una propiedad que segun el valor cambia el tamaño del contenedor y actua como un porcentaje */
+    flex-grow: 1;
+
+    /* es una propiedad que establece el largo y no se modifica */
+    flex-basis: 200px;
+}
+.a2{
+
+    order: 1;
+    flex-grow: 1;
+}
+.a3{
+
+    order: 2;
+    flex-grow: 5;
+}
+
+/* 
+    es una propiedad que me permite alinear cada contenedor individual mente
+    align-self: center; */
