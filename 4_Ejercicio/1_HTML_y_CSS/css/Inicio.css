@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Creepster&family=Indie+Flower&family=Sofia&display=swap');
+
+*{margin: 0;padding: 0;} 
+html{height: 100%;}
+body{background: linear-gradient(#43AA8B,#4D908E,#577590,#277DA1);}
+header{
+    margin-bottom: 30px;
+}
+.contenedor_menu{
+   border: 1px solid white;
+
+}
+.lista_menu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+.lista_menu li{
+    list-style-type: none;
+    display: inline-block;
+}
+.lista_menu a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-family: 'Creepster', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Sofia', cursive;
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+
+   border: 1px solid black;
+   border-radius: 10px;
+   text-shadow: 1px 1px 1px black;
+   box-shadow:  3px 3px 1px #101010, inset 1px 1px 1px white;
+  
+
+}
+.lista_menu img{
+    height: 80px;
+    width: 80px;
+}
+.lista_menu .izquierda{
+    align-self: flex-start;
+}
+.lista_menu .derecha{
+    align-self: flex-end;
+}
+
+
+
+.lista_menu :hover a{
+   border: 1px solid black;
+   border-radius: 10px;
+   text-shadow: 1px 1px 1px black;
+   background-color:#277DA1 ;
+   box-shadow:  6px 6px 1px #101010, 0px 0px 5px white,inset 2px 2px 30px #277DA1;
+}
+
