@@ -7,9 +7,10 @@ body{background: linear-gradient(#43AA8B,#4D908E,#577590,#277DA1);}
 header{
     margin-bottom: 30px;
 }
+/* MENU */
 .contenedor_menu{
-   border: 1px solid white;
-
+   border: 1px dashed white;
+   
 }
 .lista_menu{
     display: flex;
@@ -20,7 +21,6 @@ header{
 }
 .lista_menu li{
     list-style-type: none;
-    display: inline-block;
 }
 .lista_menu a{
     display: block;
@@ -45,14 +45,6 @@ header{
     height: 80px;
     width: 80px;
 }
-.lista_menu .izquierda{
-    align-self: flex-start;
-}
-.lista_menu .derecha{
-    align-self: flex-end;
-}
-
-
 
 .lista_menu :hover a{
    border: 1px solid black;
@@ -62,3 +54,74 @@ header{
    box-shadow:  6px 6px 1px #101010, 0px 0px 5px white,inset 2px 2px 30px #277DA1;
 }
 
+
+/* FORMULARIO */
+.decoration1{
+    position: relative;
+    border: 1px dashed white;
+    width: 20%;
+    height: 100px;
+    z-index: -1;
+    top: 330px;
+    left: 220px;
+    box-shadow:0px 0px 30px black,inset 0px 0px 30px black;
+    display: flex;
+    
+    
+}
+
+.decoration2{
+  
+
+ 
+
+}
+
+.contenedor_log{
+    background: linear-gradient(#277ca1,#4D908E,#577590,#277DA1);
+    position: relative;
+    border: 1px dashed white;
+    width: 50%;
+    margin:auto;
+    box-shadow:0px 0px 15px black;
+    z-index: 1;
+   
+}
+.form_log{
+    position: relative;
+    border: 1px dashed white;
+    width: 90%;
+    margin:10px auto;
+    overflow: hidden;
+    padding: 10px 0px;
+    box-shadow:inset 0px 0px 15px black;
+    z-index: 2;
+
+}
+.basic{
+    display: block;
+    color: white;
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-family: 'Creepster', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Sofia', cursive;
+    margin: 10px 20px;
+    font-size: large;
+ 
+   
+}
+.form_log label {
+    font-size: 25px;
+}
+.form_log input{
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow:  3px 3px 1px #101010;
+    color: black;
+    text-align: center;
+}
+.form_log input[type="submit"]{
+    background: linear-gradient(#43AA8B,#4D908E,#577590,#277DA1);
+    color: white;
+}

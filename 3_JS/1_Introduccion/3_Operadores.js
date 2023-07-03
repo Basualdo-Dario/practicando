@@ -47,4 +47,66 @@ z = a--
 console.log(a)
 console.log(z)
 
-/* C159 T25 */
+
+
+/* #################################################################################################### */
+
+// Operador de Asignacion
+ let w = 2
+ console.log(w)
+
+    w += 2
+     console.log(w)
+
+    w -= 2
+     console.log(w)
+
+    w *= 2
+     console.log(w)
+
+    w /=2
+      console.log(w)
+      
+    w **=2
+    console.log(w)
+
+    w %=3
+     console.log(w)
+
+
+    
+/* #################################################################################################### */
+
+    // Operador de comparacion
+
+    let va = 1 , vb ='1';
+    //el operador == revisa el valor sin importar el tipo
+    console.log(va == vb);  
+
+    //el operador === revisa los valor pero tambien los tipos 
+    console.log(va === vb);
+
+
+
+    
+/* #################################################################################################### */
+
+    //Operador distinto != 
+
+    let da = 1 , db ='1';
+    //el operador != revisa el valor sin importar el tipo
+    console.log(da != db);  
+
+    //el operador !== revisa los valor pero tambien los tipos 
+    console.log(da !== db);
+
+
+/* #################################################################################################### */
+
+    //Operadores relacionales
+    let za = 3 , zb = 3;
+
+    console.log(za > zb );
+    console.log(za < zb );
+    console.log(za >= zb );
+    console.log(za <= zb );

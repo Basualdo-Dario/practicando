@@ -76,6 +76,9 @@ var autos =['Renault','Fiat','Fort','Chevrolet'];
 console.log(autos,typeof autos);
 
 
+
+/* #################################################################################################### */
+
 // Concatenacion
 
 var nombre = 'Luis';
