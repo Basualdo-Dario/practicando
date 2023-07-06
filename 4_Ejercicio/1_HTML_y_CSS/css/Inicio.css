@@ -7,9 +7,18 @@ body{background: linear-gradient(#43AA8B,#4D908E,#577590,#277DA1);}
 header{
     margin-bottom: 30px;
 }
+.contenedor_fondo img{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: -10000;
+    
+}
 /* MENU */
 .contenedor_menu{
    border: 1px dashed white;
+   overflow: hidden;
    
 }
 .lista_menu{
@@ -26,6 +35,7 @@ header{
     display: block;
     text-decoration: none;
     color: white;
+    background-color: #43AA8B;
     font-family: 'Aref Ruqaa Ink', serif;
     font-family: 'Creepster', cursive;
     font-family: 'Indie Flower', cursive;
@@ -56,16 +66,15 @@ header{
 
 
 /* FORMULARIO */
-
-
 .contenedor_log{
     background: linear-gradient(#277ca1,#4D908E,#577590,#277DA1);
-    position: relative;
     border: 1px dashed white;
     width: 50%;
-    margin:auto;
     box-shadow:0px 0px 15px black;
-    z-index: 1;
+    position: relative;
+    margin: auto;
+
+  
    
 }
 .form_log{
@@ -76,7 +85,6 @@ header{
     overflow: hidden;
     padding: 10px 0px;
     box-shadow:inset 0px 0px 15px black;
-    z-index: 2;
 
 }
 /* box */
@@ -103,11 +111,16 @@ header{
     color: black;
     text-align: center;
 }
-.form_log input[type="submit"]{
-    background: linear-gradient(#43AA8B,#4D908E,#577590,#277DA1);
+.form_log .enviar{
+    background:rgba(67, 170, 139, 1);
     color: white;
-    
 }
+.form_log .enviar:hover{
+    background-color: rgba(39, 124, 161, 1);
+ }
+ .form_log .enviar:active{
+    border-color: #F94144;
+ }
 
 @media(max-width:694px){
     /* MENU */
@@ -135,17 +148,6 @@ header{
 
 @media(max-width:395px){
     /* MENU */
-    .contenedor_menu{
-        
-    }
-    .boton{
-        background-color: white;
-        width: 90%;
-        height: 30px;
-        margin: 10px auto;
-        border: 1px solid black;
-        border-radius: 50px;
-    }
     .decoration{
         background-color: rgba(128, 128, 128, 0.562);
         width: 90%;
@@ -154,7 +156,10 @@ header{
         border: 1px solid black;
         border-radius: 50px;
     } 
-  
+
+    .contenedor_menu{
+        display: none;
+    }
     .lista_menu{
         margin: auto;
     }
@@ -175,5 +180,11 @@ header{
         font-size: 15px;
     }
 
+    .decoration:active + .contenedor_menu{
+        display: block;
+    }
+    .decoration:hover + .contenedor_menu{
+        display: block;
+    }
  }
 
