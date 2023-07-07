@@ -55,15 +55,20 @@ header{
     height: 80px;
     width: 80px;
 }
+.decoration{
+       display:none;
+   } 
 
-.lista_menu :hover a{
+.lista_menu a:hover{
    border: 1px solid black;
    border-radius: 10px;
    text-shadow: 1px 1px 1px black;
    background-color:#277DA1 ;
    box-shadow:  6px 6px 1px #101010, 0px 0px 5px white,inset 2px 2px 30px #277DA1;
 }
-
+.lista_menu a:active{
+    border-color: #F94144;
+}
 
 /* FORMULARIO */
 .contenedor_log{
@@ -149,13 +154,23 @@ header{
 @media(max-width:395px){
     /* MENU */
     .decoration{
-        background-color: rgba(128, 128, 128, 0.562);
-        width: 90%;
-        height: 5px;
-        margin: 2px auto;
-        border: 1px solid black;
-        border-radius: 50px;
+        position: relative;
+        display: inline-block;
+        height: 50px;
+        width: 50px;
     } 
+    .decoration .im1{
+        left: 0;
+    }
+    .decoration .im2{
+        left: 25%;
+    }
+    .decoration .im3{
+        left: 50%;
+    }
+    .decoration .im4{
+        left: 75%;
+    }
 
     .contenedor_menu{
         display: none;
@@ -180,11 +195,10 @@ header{
         font-size: 15px;
     }
 
-    .decoration:active + .contenedor_menu{
-        display: block;
-    }
-    .decoration:hover + .contenedor_menu{
-        display: block;
+   
+
+    header:hover  .contenedor_menu{
+        display:block;
     }
  }
 

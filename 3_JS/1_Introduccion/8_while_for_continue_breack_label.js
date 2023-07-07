@@ -67,4 +67,3 @@ for(let contador = 0 ;contador <= 10;contador++ ){
     }
         console.log(contador)
 }
-/* C186 T28 */
