@@ -7,6 +7,7 @@ body{background: linear-gradient(#43AA8B,#4D908E,#577590,#277DA1);}
 header{
     margin-bottom: 30px;
 }
+/* Background */
 .contenedor_fondo img{
     width: 100%;
     height: 100%;
@@ -92,7 +93,7 @@ header{
     box-shadow:inset 0px 0px 15px black;
 
 }
-/* box */
+/* box input-label */
 .basic{
     display: block;
     color: white;
@@ -127,6 +128,12 @@ header{
     border-color: #F94144;
  }
 
+
+
+
+
+
+ /* tablet-mobileL*/
 @media(max-width:694px){
     /* MENU */
      .lista_menu li{display: inline-block;}
@@ -138,7 +145,7 @@ header{
     .contenedor_log{ width: 68%;}
 
 }
-@media(max-width:530px){
+ @media(max-width:530px){
 
 /* MENU */
     .lista_menu li{display: inline-block;}
@@ -149,29 +156,20 @@ header{
 /* FORMULARIO */
     .contenedor_log{ width: 80%;}
 
-}
+} 
 
 @media(max-width:395px){
     /* MENU */
     .decoration{
         position: relative;
-        display: inline-block;
-        height: 50px;
-        width: 50px;
+        display: block;
+        height: 10px;
+        width: 90%;
+        background:linear-gradient(#F9C74F,#F8961E);
+        border: 1px dashed black;
+        border-radius: 10px;
+        margin: 10px auto;
     } 
-    .decoration .im1{
-        left: 0;
-    }
-    .decoration .im2{
-        left: 25%;
-    }
-    .decoration .im3{
-        left: 50%;
-    }
-    .decoration .im4{
-        left: 75%;
-    }
-
     .contenedor_menu{
         display: none;
     }
@@ -197,7 +195,7 @@ header{
 
    
 
-    header:hover  .contenedor_menu{
+    header:hover .contenedor_menu{
         display:block;
     }
  }

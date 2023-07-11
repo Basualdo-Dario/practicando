@@ -1,0 +1,22 @@
+*{margin: 0;padding: 0;}
+html{height: 100%;}
+body{background: linear-gradient(#43AA8B,#4D908E,#577590,#277DA1);
+    color: white;}
+
+/* Menu */
+header{
+
+}
+.contenedor_menu{
+
+}
+.contenedor_menu ul{
+    list-style-type:none;
+}
+.contenedor_menu li{
+
+}
+.contenedor_menu a{
+    text-decoration: none;
+}
+
