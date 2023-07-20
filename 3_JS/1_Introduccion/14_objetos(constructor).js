@@ -48,6 +48,3 @@ console.log(padre.tel);
 console.log(hijo);
 console.log(padre);
 
-/*********************************************************************************************/
-/* Methodo call */
-

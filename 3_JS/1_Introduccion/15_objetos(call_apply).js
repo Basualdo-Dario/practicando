@@ -51,4 +51,3 @@ let arreglo =['Super Auto','Negro.'];
 console.log(user1.apellidoN.apply(user2,arreglo));
 
 
-/* C216 T32 */
