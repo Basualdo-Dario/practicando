@@ -7,60 +7,85 @@ class Productos{
         this._nombre = nombre;
         this._precio = precio;
         this._idProductos = ++Productos.idProductos;
-        this._contadorProductos;
+  
     }
 
     get idProductos(){return this._contadorProductos;}
     get nombre(){return this._nombre;}
     get precio(){return this._precio;}
-    get contadorProductos(){return this.contadorProductos;}
 
     set nombre(nombre){ this._nombre = nombre;}
     set precio(precio){ this._precio = precio;}
-    set contadorProductos(contadorProductos){ this.contadorProductos = contadorProductos;}
 
-    toString(){return `ID: ${this.idProductos},Nombre: ${this._nombre},Precio: ${this._precio}`}
+    toString(){return `ID: ${this._idProductos}, Nombre: ${this._nombre}, Precio: $${this._precio}`}
 }
 
 
+
+
+/***************************************************************************************************/
+
+
+
+
 class Orden{
-    static idOrden = 0
+
+    static idOrden = 0;
+    static get MAX_PRODUCTOS(){return 5;}
+    
     constructor(){
         this._idOrden = ++Orden.idOrden;
-        this._productos = [];
-        this._maxProductos = 5;
-        this._contadorProductosAgregados;
-        this._contadorOrdenes = this.idOrden;
+        this._productos =[];
+        this._contadorProductosAgregados = 0;
     }
 
-    agregarProductos(producto){
-        if(this._productos.length < this._maxProductos){
+    get idOrden(){return this._idOrden}
 
-            this._productos.push(producto);
+    get contadorProductosAgregados(){return this._contadorProductosAgregados;}
+    set contadorProductosAgregados(productos){this._contadorProductosAgregados = productos;}
+
+
+
+
+    agregarProductos(producto){
+
+        if(this._productos.length < Orden.MAX_PRODUCTOS){
+            
+                this._productos.push(producto);
+                ++this._contadorProductosAgregados;
         }
         else{
                 console.log('No se agrego el ultimo Producto,Limite alcanzado')
         }
     }
 
-    calcularTotal(orden){
-        let total;
-        for(let i; i < orden._Productos.length;i++){
-            
-            let producto = orden[i];
-            total = total + producto.precio;
+
+    calcularTotal(){
+       let res = 0;
+       for(let producto of this._productos){
+           res += producto.precio;
+       }
+       return `Total: $${res}.`;
+    } 
+
+
+    mostrarOrden(){
+        let all = '';
+        for(let producto of this._productos){
+                all +=`\n${producto}`;
         }
-        return total;
+        return `${all}\n${this.calcularTotal()}`;
     }
+
+    toString(){
+        return `ID_ORDEN: ${this._idOrden}.\n ${this.mostrarOrden()}\nPRODUCTOS_AGREGADO: ${this._contadorProductosAgregados}`;
+    }
+ 
 }
 
 pro1 = new Productos('Queso',200);
 pro2 = new Productos('Pan',500);
 pro3= new Productos('Salame',1000);
-
-console.log(pro1);
-console.log(pro2);
-console.log(pro3);
 
 
 orden1 = new Orden();
@@ -70,9 +95,15 @@ orden1.agregarProductos(pro3);
 orden1.agregarProductos(pro2);
 orden1.agregarProductos(pro3);
 
-
-let to = orden1.calcularTotal(orden1);
-console.log(to)
+console.log(orden1.toString());
 
 
-/* C234 T35 */
+orden2 = new Orden();
+orden2.agregarProductos(pro1);
+orden2.agregarProductos(pro2);
+
+
+console.log(orden2.toString());
+
+
+/* C238 T36 */
