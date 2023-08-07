@@ -110,3 +110,35 @@ console.log(computadora.toString());
 
 computadora2 = new Computadora('Kit Empresa',monitor2,teclado2,raton2)
 console.log(computadora2.toString());
+
+
+class Orden{
+
+    static idOrden = 0;
+    constructor(){
+        this._idOrden = ++Orden.idOrden;
+        this._computadoras = [];
+    }
+    get idOrden(){return this._idOrden}
+
+    agregarComputadora(computadora){this._computadoras.push(computadora);}
+
+    mostrarOrden(){
+        let ordenTotal = '';
+        for(let compu of this._computadoras){
+            ordenTotal += compu.toString() +'\n\n'
+        }
+        return ordenTotal;
+    }
+    
+    toString(){ return `ID_ORDEN: ${this._idOrden} \n${this.mostrarOrden()}`;}
+}
+
+orden1 = new Orden();
+orden1.agregarComputadora(computadora);
+orden1.agregarComputadora(computadora2);
+orden1.agregarComputadora(computadora);
+orden1.agregarComputadora(computadora2);
+console.log(orden1.mostrarOrden());
+
+console.log(orden1.toString());
