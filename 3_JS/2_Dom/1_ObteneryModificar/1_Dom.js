@@ -27,19 +27,6 @@ parrafos.innerHTML = 'que ondera';
 
 
 
-/* getElementByTagname = obtener elemento mediante nombre del tag */
-//obtiene todo los valores de la etiqueta seleccionada
- 
-let itali = document.getElementsByTagName('i');
 
-console.log(`${itali.length}`);
-
-for(let i =0 ;i < itali.length;i++){
-
-    console.log(`${i}:${itali[i].innerHTML}`);
-}
-
-
-/* C266 T43 */
 
 

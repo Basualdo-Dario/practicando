@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        label{display: block;}
+        input{display: block;}
+    </style>
+</head>
+<body>
+    
+    <form id="formPersona">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="name:" name="Nombre">
+
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" placeholder="surname:" name="Apellido">
+
+        <label for="edad">Edad</label>
+
+        <input type="number" step="1" min="0" max="150" id="edad" placeholder="age:" name="Edad">
+        
+
+    </form>
+    <button onclick="enviarValores()" >Enviar</button>
+
+    <br>
+    <br>
+    <div id="valores"></div>
+    <br>
+    <br>
+    <div id="individual"></div>
+
+</body>
+<script src="/3_JS/2_Dom/3_Formulario/scripts.js"></script>
+</html>
