@@ -15,3 +15,6 @@ formula.addEventListener('blur',(evento)=>{
     obj.style.background ='';
     obj.style.color ='black';
 },true);
+
+
+/* C284 T45 */
