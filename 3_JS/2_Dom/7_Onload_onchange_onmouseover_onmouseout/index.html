@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onload</title>
+</head>
+<body onload="entrar()">
+
+    <h1>Onload</h1>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores doloremque iusto at suscipit sapiente. Mollitia laboriosam accusantium dolor sapiente distinctio sint voluptatem, quidem, ea facilis assumenda, error laborum adipisci deleniti.</p>
+
+    <br><br>
+
+    <h1>Onchange</h1>
+
+    <br>
+
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" onchange="cambio(this)">
+
+    <br>
+
+
+    <br><br>
+
+    <h1>onmouseover y onmouseout </h1>
+
+    
+    <p onmouseover="visualizar(this)" onmouseout="noVisualizar(this)" id="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ex voluptas tempora voluptatem eveniet rerum commodi molestias facilis temporibus, magnam nobis, iusto ab culpa dolorum voluptatibus ratione? Totam, rerum quam.</p>
+    
+    <style>
+        #parrafo{
+            margin: auto;
+            width: 200px;
+            height: 50px;
+            padding: 10px 10px 5px;
+            border: 1px solid red;
+            overflow: hidden;
+        }
+    </style>
+
+    
+</body>
+<script src="/3_JS/2_Dom/7_Onload_onchange_onmouseover_onmouseout/script.js"></script>
+</html>

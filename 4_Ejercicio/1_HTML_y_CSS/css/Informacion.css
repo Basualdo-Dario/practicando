@@ -87,6 +87,47 @@ header{
     font-family: 'Courier New', Courier, monospace;
     text-shadow: 1px 1px 1px black;
 }
-.titulo h1 span{}
 
-/* Nota: corregir titulo  y probar lo responsive*/
+main{
+   /*  clear: both; */
+}
+
+section{
+    position: relative;
+    height: 100px;
+    width: 50%;
+    margin: 20px auto;
+}
+article{
+
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 30px;
+
+    
+}
+
+article h3{
+    text-align: center;
+    float: left;
+    width: 70%;
+}
+article p{
+    display:inline;
+    float: left;
+    width: 70%;
+}
+
+article img{
+    float: right;
+    width: 30%;
+    height: 60%;
+    
+}
+article footer{
+    clear: both;
+    text-align: center;
+    position: relative;
+    top: 5px;
+}
+
