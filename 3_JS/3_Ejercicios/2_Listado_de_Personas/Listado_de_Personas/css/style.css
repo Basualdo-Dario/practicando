@@ -1,0 +1,87 @@
+*{margin: 0; padding: 0;}
+html{height: 100%;}
+
+/* Background */
+body{
+    background-image: url('/3_JS/3_Ejercicios/2_Listado_de_Personas/Listado_de_Personas/css/fondo.png'),linear-gradient(to left, #2196f3, #009688); 
+}
+header{
+    margin-top: 100px;
+}
+
+/* Titulo */
+header h1{
+    text-align: center;
+    color: white;
+    width: 40%;
+    margin: 50px auto ;
+    background-color: rgba(81, 19, 226, 0.801);
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+}
+
+/* Imprimir */
+.imprimir{
+    width: 40%;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    text-align: start;
+    padding: 20px 30px 20px 30px;
+
+}
+
+/* Ingresar valor */
+
+.contenedor{
+    background-color: white;
+    width: 40%;
+    margin: 50px auto;
+    padding: 40px 30px;
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+input{
+    border: none;
+    width: 40%;
+    font-size: medium;
+    text-align: center;
+    outline: 0px;
+    
+}
+.nom{
+    position: absolute;
+    bottom: 4px;
+    left: 5%;
+    
+}
+.ape{
+    position: absolute;
+    bottom: 4px;
+    left: 55%;
+}
+.boton{
+    background-color: rgba(81, 19, 226, 0.801);
+    padding: 10px;
+    border: none;
+    border-radius: 70px;
+    color: white;
+    font-size: x-large;
+    position: absolute;
+    top: 0px;
+    left: 45%;
+    z-index: 1;
+}
+
+.boton:active{
+    border: 1px solid #2196f3;
+    color:#009688 ;
+}
+
+input:hover{
+    border-bottom: 2px solid rgba(81, 19, 226, 0.801);
+}
+
+
