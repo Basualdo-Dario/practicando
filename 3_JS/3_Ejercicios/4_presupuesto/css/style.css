@@ -1,0 +1,190 @@
+*{margin: 0;padding: 0;}
+
+/************************* Dinero y header***********************************************/
+.header{
+    background-image: url('/3_JS/3_Ejercicios/4_presupuesto/css/fondo.png'),linear-gradient(to right,rgba(206, 5, 5, 0.849),rgb(160, 74, 160));
+    color: white;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+.dinerototal{
+    text-align: center;
+        
+}
+.textototal{
+    font-size: 20px;
+    margin: 20px auto 25px;
+}
+.numerototal{
+    font-size: 45px;
+}
+
+
+/************************* Informacion***********************************************/
+.box{
+    margin: 10px auto;
+    width: 30%;
+    height: 40px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: -1px -1px 5px black;
+    
+}
+
+.ingreso{
+    background-color: #64C9CF;
+}
+.egreso{
+    background-color: #DF711B;
+}
+.textobox{
+    margin-left: 10px;
+}
+.numeroingreso{
+    position: relative;
+    right: 20%;
+    font-size: smaller;
+}
+.numeroegreso{
+    position: relative;
+    right: 8%;
+}
+
+.numero{
+    display: inline;
+    font-size: smaller;
+}
+.porcentajeegreso{
+    font-size: x-small;
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.249);
+    border-radius: 10px;
+    display: inline;
+}
+
+
+/************************* Formulario***********************************************/
+.formulario{
+    width: 100%;
+    height: 70px;
+    border: 1px solid black;
+    background-color:rgba(128, 128, 128, 0.26);
+    position: relative;
+
+    margin-bottom: 50px;
+
+}
+.tamaño{
+    font-size: medium;  
+    top: 30%;
+    padding: 5px 0px;
+    outline: none;
+}
+select{   
+    position: absolute;
+    width: 5%;
+    left: 25%;
+  
+}
+input[type ='text']{
+    position: absolute;
+    width: 30%;
+    left: 31%;
+  
+    
+}
+input[type = 'number']{
+    position: absolute;
+    width: 10%; 
+    left:62%;
+  
+}
+.btn{
+    font-size: x-large;
+    padding: 5px 0px;
+    position: absolute;
+    top: 29%;
+    width: 10%;
+    left: 74%; 
+    color: #64C9CF;
+}
+
+
+/************************* RegistroOperaciones***********************************************/
+
+
+.veringreso{
+    float: left;
+    width: 50%;
+    color: #64C9CF;
+
+}
+.veringreso p{
+    margin-bottom: 30px;
+    margin-left: 15%;
+}
+.ubicacioningreso{
+    float: right;
+    margin-right: 15%;
+}
+.coloringreso{
+    color: #64C9CF;
+}
+
+
+.veregreso{
+    float: left;
+    width: 50%;
+    color: #DF711B;
+}
+
+.veregreso p{
+    margin-bottom: 30px;
+}
+.ubicacionegreso{
+    float: left;
+    margin-right: 15%;
+}
+.coloregreso{
+    color: #DF711B;
+    display: inline;
+    margin-right: 5px;
+}
+.eporcentaje{
+    color: #DF711B;
+    font-size: small;
+    background-color:rgba(223, 112, 27, 0.2);
+    border-radius: 5px;
+    padding: 2px;
+    display: inline;
+}
+
+
+
+
+
+.boxregistro{
+    color: black;
+    border: 1px solid rgba(128, 128, 128, 0.486);
+    border-left: none;border-right: none;
+    width: 70%;
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.boxtexto{
+   margin-left: 10px;
+}
+.boxdinero{
+    margin-right: 10px;
+    
+}
+
+
