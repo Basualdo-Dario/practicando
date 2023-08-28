@@ -1,5 +1,4 @@
 *{margin: 0;padding: 0;}
-
 /************************* Dinero y header***********************************************/
 .header{
     background-image: url('/3_JS/3_Ejercicios/4_presupuesto/css/fondo.png'),linear-gradient(to right,rgba(206, 5, 5, 0.849),rgb(160, 74, 160));
@@ -105,12 +104,18 @@ input[type = 'number']{
 }
 .btn{
     font-size: x-large;
-    padding: 5px 0px;
     position: absolute;
-    top: 29%;
-    width: 10%;
+    top: 34%;
     left: 74%; 
     color: #64C9CF;
+    border: none;
+    background-color:transparent;
+}
+.btn:hover{
+    color: #DF711B;
+}
+.btn:active{
+    color:red;
 }
 
 
@@ -133,6 +138,8 @@ input[type = 'number']{
 }
 .coloringreso{
     color: #64C9CF;
+    display: inline;
+    margin-right: 5px;
 }
 
 
@@ -186,5 +193,56 @@ input[type = 'number']{
     margin-right: 10px;
     
 }
+.btni{
+    color: #64C9CF;
+    border: none;
+    background-color: transparent;
+    display: none;
+
+}
+.btne{
+    color: #DF711B;
+    margin: 0px 3px;
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+.boxregistro:hover .btni{
+    display: inline;
+
+} 
+
+.boxregistro:hover .btne{
+    display: inline;
+} 
+
+.btni:hover{
+    color: rgb(45, 87, 2);
+
+} 
+
+.btne:hover{
+    color: rgb(45, 87, 2);
+} 
+
+
+.btni:active{
+    color: red;
+
+} 
+
+.btne:active{
+    color: red;
+} 
+
+
+
+
+.boxregistro:hover{
+    background-color: rgba(128, 128, 128, 0.1);
+} 
+
+
 
 

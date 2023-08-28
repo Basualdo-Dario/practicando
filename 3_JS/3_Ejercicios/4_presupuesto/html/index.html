@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="/3_JS/3_Ejercicios/4_presupuesto/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
-<body>
+<body onload="dinero()">
     
 
-    <div class="header">
+    <div class="header" >
             
         <div class="dinerototal">
             
             <div class="textototal">Presupuesto Disponible:</div>
-            <div class="numerototal">$2,300.00</div>
+            <div class="numerototal" id="dinerototal"></div>
             
         </div>
             
         <div class="ingreso box">
             <div class="textobox">Ingreso</div>
-            <div class="numeroingreso">$3,600.00</div>
+            <div class="numeroingreso" id="montoingreso"></div>
         </div>
         
         <div class="egreso box">
@@ -29,8 +29,8 @@
             <div class="textobox">Egreso</div>
 
             <div class="numeroegreso">
-                <div class="numero">-$1,300.00</div>
-                <div class="porcentajeegreso">36.11%</div>
+                <div class="numero" id="montoegreso"></div>
+                <div class="porcentajeegreso" id="porcentajeegreso"></div>
             </div>
 
          </div>
@@ -40,62 +40,37 @@
         
 
     <div class="main">
-        <div class="formulario">
+        <div class="formulario" >
 
-            <form>
-                <select name="" id="" class="tamaño">
+            <form id="formulario">
+                <select name="selector" id="selector" class="tamaño" onchange="valor()">
                     <option value="+">+</option>
                     <option value="-">-</option>
                 </select>
                 
-                <input type="text" placeholder="Agregar Descripcion" class="tamaño">
-                <input type="number" placeholder="Valor" class="tamaño">
+                <input type="text" placeholder="Agregar Descripcion" class="tamaño" id="detalle">
+
+                <input type="number" placeholder="Valor" class="tamaño" id="monto">
             </form>
-            <i class="bi bi-check-circle btn" onclick=""></i>
+
+            <button class="bi bi-check-circle btn" onclick="cargar()" id="botoncargar"></button>
         </div>
+
+
+
 
         <div class="veringreso">
             <p>INGRESOS</p>
-
-            <div class="boxregistro ubicacioningreso">
-                <div class="boxtexto">Salario</div>
-                <div class="boxdinero coloringreso">$12.300.00</div>
+            <div id="contenidoingreso"></div>
             </div>
-            <div class="boxregistro ubicacioningreso">
-                <div class="boxtexto">Salario</div>
-                <div class="boxdinero coloringreso">$12.300.00</div>
+            
+            
+            <div class="veregreso">
+                <p>EGRESOS</p>
+                <div id="contenidoegreso"></div>
             </div>
             
         </div>
-
-        <div class="veregreso">
-            <p>EGRESOS</p>
-
-            <div class="boxregistro ubicacionegreso">
-                <div class="boxtexto">Salario</div>
-                <div class="boxdinero">
-                    <div class="coloregreso">$12.300.00</div>
-                    <div class="eporcentaje">30%</div>
-                </div>
-            </div>
-
-            <div class="boxregistro ubicacionegreso">
-                <div class="boxtexto">Salario</div>
-                <div class="boxdinero">
-                    <div class="coloregreso">$12.300.00</div>
-                    <div class="eporcentaje">30%</div>
-                </div>
-                
-            </div>
-
-        </div>
-            
-
-
-
-
-    </div>
-    
 
     <script src="/3_JS/3_Ejercicios/4_presupuesto/js/app.js"></script>
 </body>
