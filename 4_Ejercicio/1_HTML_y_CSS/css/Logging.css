@@ -120,6 +120,11 @@ header{
 .form_log .enviar{
     background:rgba(67, 170, 139, 1);
     color: white;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow:  3px 3px 1px #101010;
+    text-align: center;
 }
 .form_log .enviar:hover{
     background-color: rgba(39, 124, 161, 1);
